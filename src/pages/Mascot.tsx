@@ -32,16 +32,16 @@ export default function Mascot() {
 
           <div className="grid md:grid-cols-3 gap-6 text-left mt-12">
             <div className="p-6 rounded-xl bg-card/50 border border-primary/10 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-primary mb-2">Innovation</h3>
-              <p className="text-muted-foreground">Representing the cutting-edge technology and creative solutions that drive us forward.</p>
+              <h3 className="text-xl font-bold text-primary mb-2">Ingenuity</h3>
+              <p className="text-muted-foreground">Showcasing pioneering technologies and creative solutions that propel us toward a transformative future.</p>
             </div>
             <div className="p-6 rounded-xl bg-card/50 border border-primary/10 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-primary mb-2">Energy</h3>
-              <p className="text-muted-foreground">Embodying the vibrant spirit and enthusiasm of every student participant.</p>
+              <h3 className="text-xl font-bold text-primary mb-2">Enthusiasm</h3>
+              <p className="text-muted-foreground">Channeling the dynamic spirit and boundless passion that fuels every participant's journey.</p>
             </div>
             <div className="p-6 rounded-xl bg-card/50 border border-primary/10 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-primary mb-2">Unity</h3>
-              <p className="text-muted-foreground">Bringing together diverse talents and cultures into one harmonious celebration.</p>
+              <h3 className="text-xl font-bold text-primary mb-2">Synergy</h3>
+              <p className="text-muted-foreground">Weaving together diverse talents and cultures into a seamless, harmonious celebration of collective excellence.</p>
             </div>
           </div>
         </motion.div>
