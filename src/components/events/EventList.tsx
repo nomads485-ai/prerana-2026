@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { ArrowLeft, Calendar, Layers, MapPin, Music, Trophy, Users } from "lucide-react";
+import { ArrowLeft, Calendar, Layers, MapPin, Music, Trophy, Users, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 interface EventListProps {
@@ -54,7 +54,11 @@ export default function EventList({ category, events }: EventListProps) {
                     <CardTitle className="text-xl group-hover:text-secondary transition-colors">{event.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground text-sm mb-4">{event.shortDescription}</p>
+                    <p className="text-muted-foreground text-sm mb-2">{event.shortDescription}</p>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                      {event.day && <span className="font-medium">{event.day}</span>}
+                      {event.time && <span>• {event.time}</span>}
+                    </div>
                     <div className="space-y-2">
                       <p className="text-xs font-semibold text-secondary uppercase tracking-wider">Included Events:</p>
                       <ul className="text-sm text-muted-foreground list-disc list-inside">
@@ -101,18 +105,11 @@ export default function EventList({ category, events }: EventListProps) {
                     <CardTitle className="text-xl group-hover:text-primary transition-colors">{event.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground text-sm line-clamp-3 mb-4">{event.shortDescription}</p>
-                    <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                      <a 
-                        href="https://www.google.com/maps/place/Gitam+University+Parking/@13.2876854,77.5971134,132m/data=!3m1!1e3!4m6!3m5!1s0x3bb1e134094dd77f:0x6206764d41f07ca7!8m2!3d13.2875316!4d77.5973482!16s%2Fg%2F11l29myt7v?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 hover:text-primary transition-colors z-10 relative"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <MapPin className="w-3 h-3" /> {event.location}
-                      </a>
-                      {event.day && <span className="flex items-center gap-2"><Calendar className="w-3 h-3" /> {event.day}</span>}
+                    <p className="text-muted-foreground text-sm line-clamp-3 mb-2">{event.shortDescription}</p>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                      <div className="flex items-center gap-2"><MapPin className="w-3 h-3" /> {event.location}</div>
+                      {event.day && <div className="flex items-center gap-2"><Calendar className="w-3 h-3" /> {event.day}</div>}
+                      {event.time && <div className="flex items-center gap-2"><Clock className="w-3 h-3" /> {event.time}</div>}
                     </div>
                   </CardContent>
                   <CardFooter className="text-sm text-muted-foreground flex gap-4 border-t border-border/50 pt-4 mt-auto">

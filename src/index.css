@@ -4,6 +4,34 @@
   the font-family fallback and load Inter for body text. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Forma DJR Display is a paid/display typeface — place WOFF2 files in /public/fonts
+   Files expected (example names):
+     /public/fonts/FormaDJRDisplay-Regular.woff2  (400)
+     /public/fonts/FormaDJRDisplay-Medium.woff2   (500)
+     /public/fonts/FormaDJRDisplay-Bold.woff2     (700)
+   If you don't host the files, the browser will fall back to Inter. */
+@font-face {
+  font-family: 'Forma DJR Display';
+  src: url('/fonts/FormaDJRDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Forma DJR Display';
+  src: url('/fonts/FormaDJRDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Forma DJR Display';
+  src: url('/fonts/FormaDJRDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* DO NOT CHANGE */
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -51,74 +79,75 @@
 /* CHANGE VALUES FOR THEME — GITAM palette */
 :root {
   --radius: 0.625rem;
-  --background: #F4E4C9; /* Antique White */
-  --foreground: #004740; /* Dark Green (text on light bg) */
-  --card: #FFFFFF;
-  --card-foreground: #004740;
-  --popover: #FFFFFF;
-  --popover-foreground: #004740;
-  --primary: #007367; /* GITAM Green */
-  --primary-foreground: #FFFFFF;
-  --secondary: #A58255; /* Antique Gold */
-  --secondary-foreground: #004740;
-  --muted: #8BCBB7; /* Light Green */
-  --muted-foreground: #004740;
-  --accent: #CCBA8D; /* Beige */
-  --accent-foreground: #004740;
-  --destructive: #DD736E; /* Coral */
-  --destructive-foreground: #FFFFFF;
-  --border: #A58255;
-  --input: #A58255;
-  --ring: #E0B541; /* Mellow Yellow */
-  --chart-1: #007367;
-  --chart-2: #A58255;
-  --chart-3: #CCBA8D;
-  --chart-4: #8BCBB7;
-  --chart-5: #004740;
-  --sidebar: #007367;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #A58255;
-  --sidebar-primary-foreground: #004740;
-  --sidebar-accent: #8BCBB7;
-  --sidebar-accent-foreground: #004740;
-  --sidebar-border: #A58255;
-  --sidebar-ring: #E0B541;
+  --background: #080C08;
+  --foreground: #FAFAFA;
+  --card: #080C08;
+  --card-foreground: #FAFAFA;
+  --popover: #080C08;
+  --popover-foreground: #FAFAFA;
+  --primary: #FFA51F;
+  --primary-foreground: #080C08;
+  --secondary: #CC0000;
+  --secondary-foreground: #FAFAFA;
+  --muted: #401268;
+  --muted-foreground: #FAFAFA;
+  --accent: #051B7F;
+  --accent-foreground: #FAFAFA;
+  --destructive: #CC0000;
+  --destructive-foreground: #FAFAFA;
+  --border: #401268;
+  --input: #401268;
+  --ring: #FFA51F;
+  --chart-1: #FFA51F;
+  --chart-2: #CC0000;
+  --chart-3: #051B7F;
+  --chart-4: #401268;
+  --chart-5: #FAFAFA;
+  --sidebar: #080C08;
+  --sidebar-foreground: #FAFAFA;
+  --sidebar-primary: #FFA51F;
+  --sidebar-primary-foreground: #080C08;
+  --sidebar-accent: #401268;
+  --sidebar-accent-foreground: #FAFAFA;
+  --sidebar-border: #401268;
+  --sidebar-ring: #FFA51F;
   --gridline: #80808012; /* subtle grid pattern (old value preserved) */
 }
 
 .dark {
-  --background: #004740; /* dark green */
+  --radius: 0.625rem;
+  --background: #080C08;
   --foreground: #FAFAFA;
-  --card: #00392f;
+  --card: #080C08;
   --card-foreground: #FAFAFA;
-  --popover: #00392f;
+  --popover: #080C08;
   --popover-foreground: #FAFAFA;
-  --primary: #007367;
-  --primary-foreground: #FFFFFF;
-  --secondary: #A58255;
+  --primary: #FFA51F;
+  --primary-foreground: #080C08;
+  --secondary: #CC0000;
   --secondary-foreground: #FAFAFA;
-  --muted: #8BCBB7;
-  --muted-foreground: #00392f;
-  --accent: #CCBA8D;
-  --accent-foreground: #00392f;
-  --destructive: #DD736E;
-  --destructive-foreground: #FFFFFF;
-  --border: #A58255;
-  --input: #A58255;
-  --ring: #E0B541;
-  --chart-1: #007367;
-  --chart-2: #A58255;
-  --chart-3: #CCBA8D;
-  --chart-4: #8BCBB7;
+  --muted: #401268;
+  --muted-foreground: #FAFAFA;
+  --accent: #051B7F;
+  --accent-foreground: #FAFAFA;
+  --destructive: #CC0000;
+  --destructive-foreground: #FAFAFA;
+  --border: #401268;
+  --input: #401268;
+  --ring: #FFA51F;
+  --chart-1: #FFA51F;
+  --chart-2: #CC0000;
+  --chart-3: #051B7F;
+  --chart-4: #401268;
   --chart-5: #FAFAFA;
-  --sidebar: #00392f;
+  --sidebar: #080C08;
   --sidebar-foreground: #FAFAFA;
-  --sidebar-primary: #A58255;
-  --sidebar-primary-foreground: #00392f;
-  --sidebar-accent: #8BCBB7;
+  --sidebar-primary: #FFA51F;
+  --sidebar-primary-foreground: #080C08;
+  --sidebar-accent: #401268;
   --sidebar-accent-foreground: #FAFAFA;
-  --sidebar-border: #A58255;
-  --sidebar-ring: #E0B541;
+  --sidebar-border: #401268;
+  --sidebar-ring: #FFA51F;
   --gridline: #80808012;
 }
 
@@ -140,9 +169,39 @@
   .font-mono {
     font-family: Menlo, "Courier New", monospace;
   }
-  /* Headings should prefer Forma DJR Display if available; fall back to Inter */
-  h1,h2,h3,h4,h5,h6 {
+  /* Headings: use Forma DJR Display (display typeface) with explicit weights */
+  h1 {
     font-family: "Forma DJR Display", Inter, system-ui, sans-serif;
+    font-weight: 700;
+  }
+  h2 {
+    font-family: "Forma DJR Display", Inter, system-ui, sans-serif;
+    font-weight: 700;
+  }
+  h3 {
+    font-family: "Forma DJR Display", Inter, system-ui, sans-serif;
+    font-weight: 500;
+  }
+  h4, h5, h6 {
+    font-family: "Forma DJR Display", Inter, system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  /* Body text: Inter for readability */
+  p, span, li, a, button, input, textarea {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  /* Strong/bold elements should use explicit bold token (brand bold) */
+  strong, b {
+    font-weight: 700;
+  }
+
+  /* Ensure headings' inline strong also use the Forma family */
+  h1 strong, h2 strong, h3 strong {
+    font-family: "Forma DJR Display", Inter, system-ui, sans-serif;
+    font-weight: 700;
   }
   /* Gridline background utility used across pages to replace inline hex gradients */
   .bg-gridlines {

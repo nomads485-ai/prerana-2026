@@ -26,6 +26,11 @@ module.exports = {
         heading: ['"Forma DJR Display"', 'Inter', 'system-ui', 'sans-serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
       },
+      fontWeight: {
+        regular: 400,
+        medium: 500,
+        bold: 700,
+      },
     },
   },
   plugins: [],

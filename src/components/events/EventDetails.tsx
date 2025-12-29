@@ -16,6 +16,18 @@ export default function EventDetails({ event: selectedEvent, category }: EventDe
     if (!selectedEvent) return;
 
     const cat = selectedEvent.category.toLowerCase();
+    const formMap: Record<string, string> = {
+      technical: 'https://forms.gle/YpQCfXMVQ4kasDtB6',
+      wellness: 'https://forms.gle/sqGzHvJY8Y8hPuDK6',
+      cultural: 'https://forms.gle/KYqstmztD7UazrBu6'
+    };
+    const url = formMap[cat];
+    if (url) {
+      window.open(url, '_blank', 'noopener');
+      return;
+    }
+
+    // Fallback to internal register route if form not available
     switch (cat) {
       case "technical":
         navigate("/register/technical");
@@ -167,6 +179,14 @@ export default function EventDetails({ event: selectedEvent, category }: EventDe
                       <Calendar className="w-4 h-4" /> Day
                     </div>
                     <div className="font-medium">{selectedEvent.day}</div>
+                  </div>
+                )}
+                {selectedEvent.time && (
+                  <div>
+                    <div className="text-sm text-muted-foreground mb-1 flex items-center gap-2">
+                      <Clock className="w-4 h-4" /> Time
+                    </div>
+                    <div className="font-medium">{selectedEvent.time}</div>
                   </div>
                 )}
                 <div>

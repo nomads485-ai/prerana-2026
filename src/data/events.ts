@@ -17,6 +17,7 @@ export interface Event {
   active: boolean;
   slug: string;
   day?: string;
+  time?: string;
   timeLimit?: string;
   isCombo?: boolean;
   includedEvents?: string[];
@@ -60,7 +61,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "project-expo",
-    day: "Day 1"
+    day: "Day 1",
+    time: "11:00 AM - 04:00 PM"
   },
   {
     id: "tech04",
@@ -218,6 +220,7 @@ export const events: Event[] = [
     active: true,
     slug: "solo-dance-indian",
     day: "Day 2",
+    time: "10:30 AM - 11:20 AM",
     timeLimit: "2 + 1 minutes"
   },
   {
@@ -400,6 +403,7 @@ export const events: Event[] = [
     active: true,
     slug: "battle-of-bands",
     day: "Day 1",
+    time: "11:30 AM - 12:40 PM",
     timeLimit: "8 + 2 minutes"
   },
   {
@@ -425,6 +429,7 @@ export const events: Event[] = [
     active: true,
     slug: "fashion-show",
     day: "Day 1",
+    time: "01:00 PM - 02:20 PM",
     timeLimit: "6 + 2 minutes"
   },
   {
@@ -450,6 +455,7 @@ export const events: Event[] = [
     active: true,
     slug: "drama-competition",
     day: "Day 1",
+    time: "02:30 PM - 03:20 PM",
     timeLimit: "10–15 minutes"
   },
   {
@@ -475,6 +481,7 @@ export const events: Event[] = [
     active: true,
     slug: "mono-acting",
     day: "Day 1",
+    time: "03:20 PM - 04:00 PM",
     timeLimit: "3 + 1 minutes"
   },
   {

@@ -61,8 +61,13 @@ export default function EventCategories() {
                 whileHover={{ scale: 1.02 }}
                 className="cursor-pointer"
                 onClick={() => {
+                  // If user is not on the /events page, navigate there with query param
+                  if (location.pathname !== "/events") {
+                    navigate(`/events?open=${cat.slug}`);
+                    return;
+                  }
+                  // If already on /events, just toggle expansion and keep the URL in sync
                   setExpanded(prev => (prev === cat.slug ? null : cat.slug));
-                  // update URL so direct links can open this category
                   try { navigate(`/events?open=${cat.slug}`, { replace: true }); } catch {}
                 }}
               >
@@ -89,9 +94,9 @@ export default function EventCategories() {
                   {catEvents.length === 0 ? (
                     <div className="text-sm text-muted-foreground">No events available yet.</div>
                   ) : (
-                    <div className="flex gap-4 overflow-x-auto py-2 px-1 hide-scrollbar">
+                    <div className="flex flex-col gap-4">
                       {catEvents.map((ev, i) => (
-                        <div key={ev.id} className="min-w-[320px] flex-shrink-0" onClick={(e) => e.stopPropagation()}>
+                        <div key={ev.id} className="w-full" onClick={(e) => e.stopPropagation()}>
                           <Card className="h-full flex flex-col justify-between p-4 border-border/30">
                             <div>
                               <div className="flex items-center justify-between mb-2">
@@ -100,10 +105,27 @@ export default function EventCategories() {
                               </div>
                               <h4 className="text-lg font-bold mb-1">{ev.title}</h4>
                               <p className="text-sm text-muted-foreground line-clamp-3">{ev.shortDescription}</p>
+                              <div className="flex items-center gap-4 text-sm text-muted-foreground mt-2">
+                                {ev.day && <span className="font-medium">{ev.day}</span>}
+                                {ev.time && <span>• {ev.time}</span>}
+                              </div>
                             </div>
                             <div className="flex gap-2 mt-4">
                               <Button size="sm" variant="ghost" onClick={() => navigate(`/events/${cat.slug}/${ev.slug}`)}>Know More</Button>
-                              <Button size="sm" onClick={() => navigate(`/register/${cat.slug}`)}>Register Now</Button>
+                              <Button size="sm" onClick={(e) => {
+                                e.stopPropagation();
+                                const formMap: Record<string, string> = {
+                                  technical: 'https://forms.gle/YpQCfXMVQ4kasDtB6',
+                                  wellness: 'https://forms.gle/sqGzHvJY8Y8hPuDK6',
+                                  cultural: 'https://forms.gle/KYqstmztD7UazrBu6'
+                                };
+                                const formUrl = formMap[cat.slug];
+                                if (formUrl) {
+                                  window.open(formUrl, '_blank', 'noopener');
+                                } else {
+                                  navigate(`/register/${cat.slug}`);
+                                }
+                              }}>Register Now</Button>
                             </div>
                           </Card>
                         </div>

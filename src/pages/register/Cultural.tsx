@@ -17,19 +17,18 @@ export default function CulturalRegistration() {
             <CardHeader>
               <CardTitle className="text-center">Registration Form</CardTitle>
             </CardHeader>
-            <CardContent className="p-0">
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfCxTEYf1kyf8swspi-7did05A_tf1z-NnbrAGFSv8NttL5lQ/viewform?embedded=true" 
-                width="100%" 
-                frameBorder="0" 
-                marginHeight={0} 
-                marginWidth={0}
-                className="w-full min-h-[1500px]"
-                title="Cultural Registration"
-                sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
-              >
-                Loading…
-              </iframe>
+            <CardContent className="p-8 text-center">
+              <p className="text-muted-foreground mb-4">The registration form is hosted externally. Click the button below to open it in a new tab.</p>
+              <div className="flex justify-center">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLS_cultural_placeholder/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-2 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 transition"
+                >
+                  Open Registration Form
+                </a>
+              </div>
             </CardContent>
           </Card>
         </div>
