@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-const schedule = {
+import { events } from "@/data/events";
+
+const staticSchedule = {
   day1: [
     { time: "09:00 AM – 09:30 AM", event: "Torch Relay & Flag Hoisting", category: "Ceremony", location: "Underpass to Shivaji Bhavan" },
     { time: "09:45 AM – 09:50 AM", event: "SPICMACAY Performance", category: "Cultural", location: "In front of SB" },
@@ -29,16 +31,39 @@ const schedule = {
     { time: "09:00 AM – 05:00 PM", event: "Hackathon — 8 Hour Sprint", category: "Technical", location: "VDC (Alpha, Beta & Gamma)" },
     { time: "10:00 AM – 04:00 PM", event: "Wellness Zones", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
     { time: "10:00 AM – 10:50 AM", event: "Solo Dance (Indian)", category: "Cultural", location: "Auditorium" },
-    
     { time: "12:00 PM – 01:00 PM", event: "Maze Finder Mouse", category: "Technical", location: "VDC (Kojo)" },
-    
     { time: "02:00 PM – 03:00 PM", event: "Drone Workshop (Demo)", category: "Technical", location: "VB 204" },
     { time: "02:00 PM – 04:00 PM", event: "Art Therapy Corner", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
-    
     { time: "04:30 PM – 05:25 PM", event: "Cultural Showcase", category: "Cultural", location: "Main Stage" },
     { time: "06:00 PM – 08:30 PM", event: "DJ Night", category: "Cultural", location: "Main Stage" },
   ],
 };
+
+function buildScheduleFromEvents() {
+  const sched: Record<string, any[]> = {
+    day1: [...staticSchedule.day1],
+    day2: [...staticSchedule.day2],
+  };
+
+  events.filter(e => e.active).forEach(e => {
+    const dayStr = (e.day || "").toString();
+    const days: string[] = [];
+    if (dayStr.includes("Day 1")) days.push("day1");
+    if (dayStr.includes("Day 2")) days.push("day2");
+    if (days.length === 0) days.push("day1"); // default to day1 if not specified
+
+    days.forEach(day => {
+      // Avoid duplicate titles
+      if (!sched[day].some(item => item.event === e.title)) {
+        sched[day].push({ time: e.time || e.timeLimit || "", event: e.title, category: e.category, location: e.location || "" });
+      }
+    });
+  });
+
+  return sched;
+}
+
+const schedule = buildScheduleFromEvents();
 
 export default function Schedule() {
   const [activeCategory, setActiveCategory] = useState("All");
