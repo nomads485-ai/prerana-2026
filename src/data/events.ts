@@ -34,7 +34,7 @@ export const events: Event[] = [
     location: "VDC Innovation Street",
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
-    registrationFee: "₹299 (per team)",
+    registrationFee: "free (per team)",
     prizes: ["1st Prize: ₹8,000", "2nd Prize: ₹5,000"],
     guidelines: [
       "Working or prototype models allowed",
@@ -105,7 +105,7 @@ export const events: Event[] = [
     location: "VDC (Alpha, Beta, Gamma)",
     teamSize: "2–4 members",
     eligibility: "Team participation only",
-    registrationFee: "₹399 (per team)",
+    registrationFee: "free (per team)",
     prizes: ["1st Prize: ₹10,000", "2nd Prize: ₹8,000", "3rd Prize: ₹6,000"],
     guidelines: [
       "Theme/problem statement revealed at start",
@@ -791,7 +791,7 @@ export const events: Event[] = [
     location: "VB - 203",
     teamSize: "Varies",
     eligibility: "Open to all",
-    registrationFee: "₹349",
+    registrationFee: "₹249",
     prizes: ["See individual events"],
     guidelines: [
       "Participants must follow the rules and regulations of each individual event included in the combo.",
