@@ -35,7 +35,7 @@ export const events: Event[] = [
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
     registrationFee: "free (per team)",
-    prizes: ["1st Prize: ₹8,000", "2nd Prize: ₹5,000"],
+    prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹4,000"],
     guidelines: [
       "Working or prototype models allowed",
       "Declare power/equipment needs",
@@ -59,12 +59,12 @@ export const events: Event[] = [
     active: true,
     slug: "project-expo",
     day: "Day 1",
-    time: "10:00 AM - 04:00 pP"
+    time: "10:00 AM - 04:00 PM"
   },
   {
-    id: "tech04",
+    id: "tech02",
     title: "MAZE FINDER MOUSE",
-    code: "TECH04",
+    code: "TECH02",
     category: "Technical",
     shortDescription: "Autonomous bots race to solve a maze using sensors and logic.",
     fullDescription: "Autonomous bots race to solve a maze using sensors, navigation logic, and pathfinding algorithms.",
@@ -96,9 +96,9 @@ export const events: Event[] = [
     time: "02:00 PM - 04:00 PM"
   },
   {
-    id: "tech06",
+    id: "tech03",
     title: "HACKATHON (8-HOUR SPRINT)",
-    code: "TECH06",
+    code: "TECH03",
     category: "Technical",
     shortDescription: "Build a working prototype in 8 hours.",
     fullDescription: "A fast-paced hackathon where teams build a working prototype in 8 hours. Theme revealed on the spot.",
@@ -106,7 +106,7 @@ export const events: Event[] = [
     teamSize: "2–4 members",
     eligibility: "Team participation only",
     registrationFee: "free (per team)",
-    prizes: ["1st Prize: ₹10,000", "2nd Prize: ₹8,000", "3rd Prize: ₹6,000"],
+    prizes: ["1st Prize: ₹8,000", "2nd Prize: ₹5,000"],
     guidelines: [
       "Theme/problem statement revealed at start",
       "No pre-built code or projects",
@@ -132,9 +132,9 @@ export const events: Event[] = [
     time: "09:00 AM - 05:00 PM"
   },
   {
-    id: "tech07",
+    id: "tech04",
     title: "GAMETHON (GAME DEVELOPMENT CHALLENGE)",
-    code: "TECH07",
+    code: "TECH04",
     category: "Technical",
     shortDescription: "Design and build a playable game on a surprise theme.",
     fullDescription: "Participants design and build a playable game based on a theme revealed during the event.",
@@ -167,9 +167,9 @@ export const events: Event[] = [
     time: "10:00 AM - 02:00 PM"
   },
   {
-    id: "tech10",
+    id: "tech05",
     title: "DRONE WORKSHOP (DGCA CERTIFIED)",
-    code: "TECH10",
+    code: "TECH05",
     category: "Technical",
     shortDescription: "Certified workshop on UAV mechanics and safe drone operation.",
     fullDescription: "A certified workshop covering UAV mechanics, safe drone operation, and flight training. Participation-based workshop (no evaluation).",
@@ -851,8 +851,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "wall-of-hope",
-    day: "Day 1",
-    timeLimit: "10:30 am – 04:00 pm"
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well02",
@@ -872,8 +872,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fit-and-fine-desk",
-    day: "Day 1",
-    timeLimit: "10:30 am – 04:00 pm"
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well03",
@@ -893,8 +893,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fitness-fun-alley",
-    day: "Day 1",
-    timeLimit: "10:30 am – 04:00 pm"
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well04",
@@ -914,8 +914,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "zen-zone",
-    day: "Day 1",
-    timeLimit: "10:30 am – 04:00 pm"
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well06",
@@ -936,28 +936,28 @@ export const events: Event[] = [
     active: true,
     slug: "resource-corner",
     day: "Day 1 & 2",
-    timeLimit: "10:00 am – 04:00 pm"
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well08",
-    title: "CRAFT YOUR CALM",
+    title: "CLAY MODELLING & WORRY STONE MAKING",
     code: "WELL08",
     category: "Wellness",
-    shortDescription: "Mindful arts-and-crafts session.",
-    fullDescription: "A mindful arts-and-crafts session involving clay modelling and worry stones to reduce anxiety.",
+    shortDescription: "Therapeutic clay modelling and worry stone craft.",
+    fullDescription: "Hands-on clay modelling and worry stone sessions focused on relaxation and creativity. No evaluation—therapeutic activity open to all.",
     location: "Heritage Area",
     teamSize: "Individual",
     eligibility: "Open to all",
-    registrationFee: "Free (Registration Required)",
+    registrationFee: "Free",
     prizes: [],
     guidelines: ["Materials provided", "Express yourself freely"],
     judgingCriteria: [],
     disqualificationRules: [],
     requiresPayment: false,
     active: true,
-    slug: "craft-your-calm",
-    day: "Day 2",
-    timeLimit: "10:00 am – 12:00 pm"
+    slug: "clay-modelling-worry-stones",
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well09",
@@ -977,8 +977,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "art-therapy-corner",
-    day: "Day 2",
-    timeLimit: "01:00 pm – 04:00 pm"
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well11",
@@ -992,13 +992,55 @@ export const events: Event[] = [
     eligibility: "Open to all",
     registrationFee: "Free",
     prizes: [],
-    guidelines: ["Spread joy"],
+    guidelines: ["Joyful interactions encouraged"],
     judgingCriteria: [],
     disqualificationRules: [],
     requiresPayment: false,
     active: true,
     slug: "make-me-smile-booth",
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+  },
+  {
+    id: "well12",
+    title: "FIT CHECK",
+    code: "WELL12",
+    category: "Wellness",
+    shortDescription: "Basic health screening and quick fitness checks.",
+    fullDescription: "Basic health screening including BMI checks, pulse, and simple fitness tests. Open participation with guidance provided.",
+    location: "Heritage Area",
+    teamSize: "Individual",
+    eligibility: "Open to all",
+    registrationFee: "Free",
+    prizes: [],
+    guidelines: ["Follow volunteer instructions"],
+    judgingCriteria: [],
+    disqualificationRules: [],
+    requiresPayment: false,
+    active: true,
+    slug: "fit-check",
+    day: "Day 1 & 2",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+  },
+  {
+    id: "well13",
+    title: "RISE OF HOPE (YOGA & HOPE ACTIVITY)",
+    code: "WELL13",
+    category: "Wellness",
+    shortDescription: "Guided yoga and hope-building session.",
+    fullDescription: "A guided wellness session combining yoga and brief hope activities to start the day positively. Open to all; no evaluation.",
+    location: "Basketball Court",
+    teamSize: "Individual",
+    eligibility: "Open to all",
+    registrationFee: "Free",
+    prizes: [],
+    guidelines: ["Arrive with a mat if possible", "Follow instructor guidance"],
+    judgingCriteria: [],
+    disqualificationRules: [],
+    requiresPayment: false,
+    active: true,
+    slug: "rise-of-hope",
     day: "Day 2",
-    timeLimit: "10:00 am – 04:00 pm"
+    time: "07:30 AM – 08:30 AM"
   }
 ];
