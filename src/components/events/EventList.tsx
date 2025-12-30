@@ -1,3 +1,5 @@
+import EventDetails from "./EventDetails";
+import { getFormUrl } from "../../utils/getFormUrl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, AnimatePresence } from "framer-motion";
