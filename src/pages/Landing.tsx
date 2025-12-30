@@ -12,8 +12,7 @@ export default function Landing() {
       <main>
         <Hero />
         <About />
-        <Gallery />
-        
+        <Gallery />       
         <CtaBar />
       </main>
       <Footer />
