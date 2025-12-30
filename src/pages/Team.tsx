@@ -155,17 +155,20 @@ export default function Team() {
               <div className="w-24 h-1 bg-secondary/50 mx-auto rounded-full" />
             </div>
 
-            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4">
+            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-stretch justify-center gap-8 px-4">
               {/* Reema Mam */}
               {advisoryCommittee.filter(m => m.name.toLowerCase().includes("reema")).map((member, i) => (
                 <motion.div key={`reema-${i}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="w-full md:w-1/2">
-                  <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6">
+                  <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6 min-h-[300px]">
                     <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
-                      <Avatar className="w-36 h-36 border-4 border-primary/10 shadow-xl shadow-primary/5">
-                        <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
-                        <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
-                          {getInitials(member.name)}
-                        </AvatarFallback>
+                      <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
+                        {(member as any).image ? (
+                          <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
+                        ) : (
+                          <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
+                            {getInitials(member.name)}
+                          </AvatarFallback>
+                        )}
                       </Avatar>
                       <div className="space-y-2">
                         <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words text-center">
@@ -183,13 +186,16 @@ export default function Team() {
               {/* Asha Mam */}
               {advisoryCommittee.filter(m => m.name.toLowerCase().includes("asha")).map((member, i) => (
                 <motion.div key={`asha-${i}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="w-full md:w-1/2">
-                  <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6">
+                  <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6 min-h-[300px]">
                     <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
-                      <Avatar className="w-36 h-36 border-4 border-primary/10 shadow-xl shadow-primary/5">
-                        <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
-                        <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
-                          {getInitials(member.name)}
-                        </AvatarFallback>
+                      <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
+                        {(member as any).image ? (
+                          <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
+                        ) : (
+                          <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
+                            {getInitials(member.name)}
+                          </AvatarFallback>
+                        )}
                       </Avatar>
                       <div className="space-y-2">
                         <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words text-center">
@@ -222,13 +228,13 @@ export default function Team() {
                 <div className="flex-1">
                   <div className="flex flex-wrap justify-center gap-6">
                     {advisoryCommittee.filter(m => !m.name.toLowerCase().includes("reema") && !m.name.toLowerCase().includes("asha")).map((member, index) => (
-                      <motion.div key={`adv-${index}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: index * 0.03 }} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col items-center text-center p-4 bg-muted/5 rounded-xl border border-primary/10">
-                        <Avatar className="w-24 h-24">
+                      <motion.div key={`adv-${index}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: index * 0.03 }} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col items-center text-center p-6 bg-muted/5 rounded-xl border border-primary/10 min-h-[300px] justify-between">
+                        <Avatar className="w-32 h-32">
                           {/* Advisory members may not have individual images; use fallback initials to maintain consistent size */}
                           {(member as any).image ? (
-                            <AvatarImage src={(member as any).image} alt={member.name} />
+                            <AvatarImage src={(member as any).image} alt={member.name} className="w-full h-full object-cover object-top" />
                           ) : (
-                            <AvatarFallback className="bg-primary/5 text-primary text-2xl font-bold">{getInitials(member.name)}</AvatarFallback>
+                            <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">{getInitials(member.name)}</AvatarFallback>
                           )}
                         </Avatar>
                         <div className="mt-3">
@@ -258,7 +264,7 @@ export default function Team() {
                       transition={{ delay: idx * 0.04 }}
                       className="h-full"
                     >
-                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6">
+                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6 min-h-[300px]">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
                           <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
                             {person.image ? (
@@ -306,13 +312,16 @@ export default function Team() {
                       transition={{ delay: mIndex * 0.05 }}
                       className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-full"
                     >
-                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full">
+                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full min-h-[300px]">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
                           <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
-                            <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
-                            <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
-                              {getInitials(member.name)}
-                            </AvatarFallback>
+                            {(member as any).image ? (
+                              <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
+                            ) : (
+                              <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
+                                {getInitials(member.name)}
+                              </AvatarFallback>
+                            )}
                           </Avatar>
                           <div className="space-y-2">
                             <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words px-2 text-center">
@@ -351,13 +360,16 @@ export default function Team() {
                       transition={{ delay: mIndex * 0.05 }}
                       className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-full"
                     >
-                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full">
+                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full min-h-[300px]">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
                           <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
-                            <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
-                            <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
-                              {getInitials(member.name)}
-                            </AvatarFallback>
+                            {(member as any).image ? (
+                              <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
+                            ) : (
+                              <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
+                                {getInitials(member.name)}
+                              </AvatarFallback>
+                            )}
                           </Avatar>
                           <div className="space-y-2">
                             <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words px-2 text-center">
@@ -396,13 +408,16 @@ export default function Team() {
                       transition={{ delay: mIndex * 0.05 }}
                       className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-full"
                     >
-                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full">
+                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full min-h-[300px]">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
                           <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
-                            <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
-                            <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
-                              {getInitials(member.name)}
-                            </AvatarFallback>
+                            {(member as any).image ? (
+                              <AvatarImage src={(member as any).image} alt={member.name} className="object-cover object-top" />
+                            ) : (
+                              <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">
+                                {getInitials(member.name)}
+                              </AvatarFallback>
+                            )}
                           </Avatar>
                           <div className="space-y-2">
                             <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words px-2 text-center">

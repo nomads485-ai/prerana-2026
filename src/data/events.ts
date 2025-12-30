@@ -31,38 +31,35 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "A multi-domain technical exhibition showcasing innovative projects.",
     fullDescription: "A multi-domain technical exhibition where students present hardware prototypes, software solutions, and research-driven innovations showcasing creativity and engineering impact.",
-    location: "Open Ground / Central Area",
+    location: "VDC Innovation Street",
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
-    registrationFee: "0",
+    registrationFee: "₹299 (per team)",
     prizes: ["1st Prize: ₹8,000", "2nd Prize: ₹5,000"],
     guidelines: [
-      "Working models preferred",
+      "Working or prototype models allowed",
       "Declare power/equipment needs",
       "Setup must be completed 30 minutes before judging",
-      "No hazardous materials",
+      "No hazardous or unsafe materials",
       "All equipment must be safe",
-      "Explain Problem Statement",
-      "Methodology",
-      "Innovation",
-      "Results / expected impact"
+      "Judges' decision is final"
     ],
     judgingCriteria: [
-      "Objectives & Methodology",
       "Innovation",
-      "Demo Quality",
-      "Applicability"
+      "Technical implementation",
+      "Presentation",
+      "Impact"
     ],
     disqualificationRules: [
       "Late setup",
       "Unsafe equipment",
       "Plagiarised or purchased models"
     ],
-    requiresPayment: false,
+    requiresPayment: true,
     active: true,
     slug: "project-expo",
     day: "Day 1",
-    time: "11:00 AM - 04:00 PM"
+    time: "10:00 AM - 04:00 PM"
   },
   {
     id: "tech04",
@@ -71,21 +68,21 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Autonomous bots race to solve a maze using sensors and logic.",
     fullDescription: "Autonomous bots race to solve a maze using sensors, navigation logic, and pathfinding algorithms.",
-    location: "Open Ground / Adjacent Corridor",
+    location: "VDC (KOJO)",
     teamSize: "1–3 members",
-    eligibility: "Autonomous bots only",
-    registrationFee: "₹99",
+    eligibility: "Autonomous robots only",
+    registrationFee: "₹149 (per team)",
     prizes: ["Goodies"],
     guidelines: [
-      "Bot size: TBA",
+      "Bot size and specs will be announced",
       "Bot must navigate independently (no remote control)",
       "Touching walls = penalty (TBA)",
-      "If stuck for more than 10 seconds, reset allowed"
+      "Fastest successful run wins"
     ],
     judgingCriteria: [
-      "Fastest accurate completion",
-      "Smooth navigation",
-      "Error handling efficiency"
+      "Completion time",
+      "Accuracy",
+      "Autonomy"
     ],
     disqualificationRules: [
       "Manual intervention",
@@ -95,7 +92,8 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "maze-finder-mouse",
-    day: "Day 2"
+    day: "Day 2",
+    time: "02:00 PM - 04:00 PM"
   },
   {
     id: "tech06",
@@ -104,10 +102,10 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Build a working prototype in 8 hours.",
     fullDescription: "A fast-paced hackathon where teams build a working prototype in 8 hours. Theme revealed on the spot.",
-    location: "L1 Classrooms / VB Block",
+    location: "VDC (Alpha, Beta, Gamma)",
     teamSize: "2–4 members",
-    eligibility: "Open to all departments",
-    registrationFee: "0",
+    eligibility: "Team participation only",
+    registrationFee: "₹399 (per team)",
     prizes: ["1st Prize: ₹10,000", "2nd Prize: ₹8,000", "3rd Prize: ₹6,000"],
     guidelines: [
       "Theme/problem statement revealed at start",
@@ -117,20 +115,21 @@ export const events: Event[] = [
       "Mandatory mentor check-ins"
     ],
     judgingCriteria: [
-      "Innovation – 25%",
-      "Technical implementation – 30%",
-      "Functionality – 25%",
-      "Presentation – 20%"
+      "Problem-solving approach",
+      "Innovation",
+      "Feasibility",
+      "Teamwork"
     ],
     disqualificationRules: [
       "Pre-made projects",
       "Plagiarism",
       "Missed checkpoints"
     ],
-    requiresPayment: false,
+    requiresPayment: true,
     active: true,
     slug: "hackathon",
-    day: "Day 1"
+    day: "Day 2",
+    time: "09:00 AM - 05:00 PM"
   },
   {
     id: "tech07",
@@ -139,22 +138,22 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Design and build a playable game on a surprise theme.",
     fullDescription: "Participants design and build a playable game based on a theme revealed during the event.",
-    location: "L1 Classrooms / Labs",
+    location: "VB - 501",
     teamSize: "1–3 members",
     eligibility: "Open to all",
-    registrationFee: "₹249",
+    registrationFee: "₹449 (per team)",
     prizes: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000", "Additional Awards: Best Game Award, Best Creativity Award, Audience Choice Award"],
     guidelines: [
-      "Theme revealed at event start",
-      "Only self-created or royalty-free assets allowed",
+      "Game must be developed within the given time",
+      "Only original work allowed (no plagiarised or pre-made games)",
       "Submission must include: Game build, Screenshots, Concept explanation",
       "Must include at least one playable level"
     ],
     judgingCriteria: [
-      "Creativity & originality",
-      "Gameplay & mechanics",
-      "Visual & UI design",
-      "Overall playability"
+      "Gameplay",
+      "Creativity",
+      "Technical execution",
+      "UI/UX"
     ],
     disqualificationRules: [
       "Copyrighted assets",
@@ -164,7 +163,8 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "gamethon",
-    day: "Day 2"
+    day: "Day 1",
+    time: "10:00 AM - 02:00 PM"
   },
   {
     id: "tech10",
@@ -172,17 +172,17 @@ export const events: Event[] = [
     code: "TECH10",
     category: "Technical",
     shortDescription: "Certified workshop on UAV mechanics and safe drone operation.",
-    fullDescription: "A certified workshop covering UAV mechanics, safe drone operation, and flight training.",
-    location: "VDC",
+    fullDescription: "A certified workshop covering UAV mechanics, safe drone operation, and flight training. Participation-based workshop (no evaluation).",
+    location: "VB - 203",
     teamSize: "1",
     eligibility: "Open to all",
-    registrationFee: "₹349 per head",
+    registrationFee: "₹399",
     prizes: ["Certificate of Participation"],
     guidelines: [
       "Follow trainer instructions",
       "Fly only in designated zones",
       "Do not touch propellers when active",
-      "Damage due to negligence will attract penalty"
+      "Safety rules must be followed"
     ],
     judgingCriteria: [],
     disqualificationRules: [
@@ -192,7 +192,8 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "drone-workshop",
-    day: "Day 1"
+    day: "Day 2",
+    time: "02:00 PM - 03:00 PM"
   },
   // CULTURAL EVENTS
   {
@@ -360,7 +361,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Showcase your vocal talent.",
     fullDescription: "A solo singing competition open to all languages.",
-    location: "SB Auditorium",
+    location: "Auditorium",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -369,14 +370,16 @@ export const events: Event[] = [
       "Songs of any language allowed",
       "Vulgar lyrics prohibited",
       "Karaoke permitted",
+      "Time limit strictly followed",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Voice quality", "Pitch", "Rhythm", "Stage presence"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "solo-singing",
     day: "Day 1",
+    time: "10:00 AM - 05:00 PM",
     timeLimit: "3 + 1 minutes"
   },
   {
@@ -386,10 +389,10 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Live band performance competition.",
     fullDescription: "A competition for bands to perform live music.",
-    location: "SB Auditorium",
+    location: "Auditorium",
     teamSize: "4–8 members",
     eligibility: "Open to all",
-    registrationFee: "₹599",
+    registrationFee: "₹599 (per band)",
     prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹3,000"],
     guidelines: [
       "All music genres allowed",
@@ -397,40 +400,38 @@ export const events: Event[] = [
       "Teams must bring their own instruments",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Coordination", "Originality", "Sound quality", "Audience impact"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "battle-of-bands",
     day: "Day 1",
-    time: "11:30 AM - 12:40 PM",
-    timeLimit: "8 + 2 minutes"
+    time: "10:00 AM - 05:00 PM"
   },
   {
     id: "cul09",
-    title: "FASHION SHOW",
+    title: "FASHION WALK",
     code: "CUL09",
     category: "Cultural",
-    shortDescription: "Theme-based fashion showcase.",
-    fullDescription: "A fashion show competition where teams present theme-based collections.",
-    location: "Main Stage",
-    teamSize: "10–12 members",
+    shortDescription: "Theme-based fashion walk and presentation.",
+    fullDescription: "A fashion walk showcasing confidence, costume, choreography and presentation.",
+    location: "Auditorium",
+    teamSize: "Varies",
     eligibility: "Open to all",
     registrationFee: "₹899",
     prizes: ["1st Prize: ₹7,000", "2nd Prize: ₹4,000"],
     guidelines: [
-      "Theme-based fashion show",
+      "Decent attire mandatory",
       "Proper coordination and presentation required",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Confidence", "Costume", "Walk", "Presentation"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
-    slug: "fashion-show",
+    slug: "fashion-walk",
     day: "Day 1",
-    time: "01:00 PM - 02:20 PM",
-    timeLimit: "6 + 2 minutes"
+    time: "10:00 AM - 05:00 PM"
   },
   {
     id: "cul10",
@@ -439,7 +440,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Theatrical performance competition.",
     fullDescription: "A drama competition for teams to perform theme-based plays.",
-    location: "SB Seminar Hall",
+    location: "Auditorium",
     teamSize: "8–10 members",
     eligibility: "Open to all",
     registrationFee: "₹699",
@@ -447,16 +448,17 @@ export const events: Event[] = [
     guidelines: [
       "Theme-based performance",
       "Offensive content not allowed",
+      "Time limit: 8–10 minutes",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Acting", "Script", "Expressions", "Coordination"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "drama-competition",
     day: "Day 1",
-    time: "02:30 PM - 03:20 PM",
-    timeLimit: "10–15 minutes"
+    time: "10:00 AM - 05:00 PM",
+    timeLimit: "8–10 minutes"
   },
   {
     id: "cul11",
@@ -467,7 +469,7 @@ export const events: Event[] = [
     fullDescription: "A solo acting competition to showcase dramatic skills.",
     location: "Auditorium",
     teamSize: "1",
-    eligibility: "Open to all",
+    eligibility: "Single performer only",
     registrationFee: "₹149",
     prizes: ["1st Prize: ₹1,000", "2nd Prize: ₹500"],
     guidelines: [
@@ -475,13 +477,13 @@ export const events: Event[] = [
       "Vulgar content prohibited",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Expressions", "Dialogue delivery", "Stage usage"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "mono-acting",
     day: "Day 1",
-    time: "03:20 PM - 04:00 PM",
+    time: "10:00 AM - 05:00 PM",
     timeLimit: "3 + 1 minutes"
   },
   {
@@ -501,12 +503,13 @@ export const events: Event[] = [
       "Original narration only",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Content", "Narration", "Voice modulation"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "story-telling",
     day: "Day 1",
+    time: "10:00 AM - 04:00 PM",
     timeLimit: "6 + 2 minutes"
   },
   {
@@ -516,23 +519,24 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Create a short film.",
     fullDescription: "A competition for aspiring filmmakers to showcase their short films.",
-    location: "L1 Classroom",
+    location: "VB - 203",
     teamSize: "1–4 members",
     eligibility: "Open to all",
     registrationFee: "₹249",
     prizes: ["1st Prize: ₹2,000", "2nd Prize: ₹1,000"],
     guidelines: [
-      "No theme",
       "Only original content allowed",
+      "Maximum duration 10 minutes",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Storytelling", "Direction", "Editing", "Cinematography"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "short-film-making",
     day: "Day 1",
-    timeLimit: "Max. 15 minutes"
+    time: "10:00 AM - 04:00 PM",
+    timeLimit: "Max. 10 minutes"
   },
   {
     id: "cul14",
@@ -541,7 +545,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Create a creative reel.",
     fullDescription: "A competition to create engaging short-form video content.",
-    location: "L1 Classroom",
+    location: "VB - 203",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -549,14 +553,16 @@ export const events: Event[] = [
     guidelines: [
       "Original content only",
       "Plagiarism leads to disqualification",
+      "Maximum duration 60 seconds",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Creativity", "Editing", "Message clarity"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "reel-contest",
     day: "Day 1",
+    time: "10:00 AM - 04:00 PM",
     timeLimit: "Max 60 seconds"
   },
   {
@@ -594,7 +600,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Theme-based photography contest.",
     fullDescription: "A photography competition to capture the best moments.",
-    location: "Campus",
+    location: "VB - 203",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -602,14 +608,16 @@ export const events: Event[] = [
     guidelines: [
       "One photo per participant",
       "Theme-based photography",
+      "Basic editing allowed",
       "Judges' decision will be final"
     ],
-    judgingCriteria: [],
+    judgingCriteria: ["Composition", "Creativity", "Theme relevance"],
     disqualificationRules: [],
     requiresPayment: true,
     active: true,
     slug: "photography-contest",
-    day: "Day 1"
+    day: "Day 2",
+    time: "10:00 AM - 02:00 PM"
   },
   {
     id: "cul17",
@@ -758,7 +766,7 @@ export const events: Event[] = [
     location: "Multiple Venues",
     teamSize: "Varies",
     eligibility: "Open to all",
-    registrationFee: "₹449",
+    registrationFee: "₹799",
     prizes: ["See individual events"],
     guidelines: [
       "Participants must follow the rules and regulations of each individual event included in the combo.",
@@ -780,10 +788,10 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Short Film Making + Reel Contest bundle.",
     fullDescription: "Register for both Short Film Making and Reel Contest together.",
-    location: "L1 Classroom",
+    location: "VB - 203",
     teamSize: "Varies",
     eligibility: "Open to all",
-    registrationFee: "₹249",
+    registrationFee: "₹349",
     prizes: ["See individual events"],
     guidelines: [
       "Participants must follow the rules and regulations of each individual event included in the combo.",
@@ -798,6 +806,32 @@ export const events: Event[] = [
     isCombo: true,
     includedEvents: ["Short Film Making", "Reel Contest"]
   },
+  {
+    id: "combo05",
+    title: "COMBO 5: DANCE MEGA (SOLO + DUET + GROUP)",
+    code: "COMBO05",
+    category: "Cultural",
+    shortDescription: "Solo + Duet + Group dance bundle.",
+    fullDescription: "Register for Solo, Duet and Group dance events together.",
+    location: "Auditorium",
+    teamSize: "Varies",
+    eligibility: "Open to all",
+    registrationFee: "₹1299",
+    prizes: ["See individual events"],
+    guidelines: [
+      "Participants must follow rules of included events",
+      "Judges' decisions final"
+    ],
+    judgingCriteria: [],
+    disqualificationRules: [],
+    requiresPayment: true,
+    active: true,
+    slug: "combo-5",
+    day: "Day 2",
+    isCombo: true,
+    includedEvents: ["Solo Dance (Western)", "Duet Dance", "Group Dance (Indian)" ]
+  },
+
   // WELLNESS EVENTS
   {
     id: "well01",
@@ -884,27 +918,6 @@ export const events: Event[] = [
     timeLimit: "10:30 am – 04:00 pm"
   },
   {
-    id: "well05",
-    title: "PHOTO BOOTH (DAY 1 and DAY 2)",
-    code: "WELL05",
-    category: "Wellness",
-    shortDescription: "Wellness-themed photo booth with aesthetic backdrops.",
-    fullDescription: "A beautifully decorated wellness-themed photo booth with aesthetic backdrops, pastel props, and inspirational taglines designed to spread wellness positivity across campus and social media.",
-    location: "Heritage Area",
-    teamSize: "Open to all",
-    eligibility: "Open to all",
-    registrationFee: "Free",
-    prizes: [],
-    guidelines: ["Share the positivity"],
-    judgingCriteria: [],
-    disqualificationRules: [],
-    requiresPayment: false,
-    active: true,
-    slug: "photo-booth",
-    day: "Day 1 & 2",
-    timeLimit: "10:00 am – 04:00 pm"
-  },
-  {
     id: "well06",
     title: "RESOURCE CORNER (DAY 1 and 2)",
     code: "WELL06",
@@ -924,27 +937,6 @@ export const events: Event[] = [
     slug: "resource-corner",
     day: "Day 1 & 2",
     timeLimit: "10:00 am – 04:00 pm"
-  },
-  {
-    id: "well07",
-    title: "TREASURE HUNT",
-    code: "WELL07",
-    category: "Wellness",
-    shortDescription: "Adventurous team event with wellness-themed clues.",
-    fullDescription: "An adventurous team event where clues include wellness activities like stretching, reflection, and kindness tasks.",
-    location: "Heritage Area",
-    teamSize: "3–5 members",
-    eligibility: "Open to all",
-    registrationFee: "Free (Registration Required)",
-    prizes: ["TBA"],
-    guidelines: ["Complete tasks to get next clue", "Fair play mandatory"],
-    judgingCriteria: ["Time taken", "Task completion"],
-    disqualificationRules: ["Cheating", "Skipping tasks"],
-    requiresPayment: false,
-    active: true,
-    slug: "treasure-hunt",
-    day: "Day 2",
-    timeLimit: "10:00 am – 12:00 pm"
   },
   {
     id: "well08",
