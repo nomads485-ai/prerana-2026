@@ -112,7 +112,7 @@ export default function Contact() {
                     <User className="h-5 w-5 text-primary mt-1 shrink-0" />
                     <div>
                       <p className="font-semibold">Thousheer</p>
-                      <p className="text-sm text-muted-foreground">President</p>
+                      <p className="text-sm text-muted-foreground">President-Prerana</p>
                       <a href="tel:+919113815655" className="text-sm hover:text-primary transition-colors">+91 91138 15655</a>
                     </div>
                   </div>

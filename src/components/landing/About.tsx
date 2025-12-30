@@ -28,7 +28,7 @@ export default function About() {
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4 text-center">
-              This year's theme, <span className="font-semibold">Innovation● Collaboration● Hope●</span>, dives into “The Spectrum Within”, which is an exploration of the wide range of diverse strengths, skills, and qualities that exist within every student and celebrates each of them. From the visionaries and innovators to the artists, tech enthusiasts, and empaths of GITAM, Prerana recognizes and cherishes your uniqueness, giving a platform to express your true self.
+              This year's theme, <span className="font-semibold">Innovation, Collaboration, Hope </span> dives into “The Spectrum Within”, which is an exploration of the wide range of diverse strengths, skills, and qualities that exist within every student and celebrates each of them. From the visionaries and innovators to the artists, tech enthusiasts, and empaths of GITAM, Prerana recognizes and cherishes your uniqueness, giving a platform to express your true self.
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4 text-center">

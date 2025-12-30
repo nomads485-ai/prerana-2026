@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -121,6 +121,12 @@ export default function Hero() {
                 onClick={() => navigate("/events")}
               >
                 Explore Events
+              </Button>
+            </div>
+
+            <div className="mt-8 text-center">
+              <Button variant="link" className="text-primary text-xl gap-2" onClick={() => navigate("/schedule") }>
+                View Full Schedule <ArrowRight className="w-5 h-5" />
               </Button>
             </div>
           </motion.div>

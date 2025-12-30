@@ -76,7 +76,14 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1" />
-                <span>GITAM University, Bengaluru</span>
+                <a
+                  href="https://www.google.com/maps/place/GITAM+Deemed+to+be+University+Bengaluru/@13.2866427,77.5930016,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3df04c9efe91:0x74ef0f7e2f81d564!8m2!3d13.2866427!4d77.5955765!16s%2Fg%2F1hjgjmxwt?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  GITAM University, Bengaluru
+                </a>
               </li>
             </ul>
           </div>
