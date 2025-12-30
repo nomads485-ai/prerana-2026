@@ -168,7 +168,7 @@ export default function Team() {
                         </AvatarFallback>
                       </Avatar>
                       <div className="space-y-2">
-                        <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight">
+                        <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words text-center">
                           {member.name}
                         </CardTitle>
                         <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
@@ -192,7 +192,7 @@ export default function Team() {
                         </AvatarFallback>
                       </Avatar>
                       <div className="space-y-2">
-                        <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight">
+                        <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words text-center">
                           {member.name}
                         </CardTitle>
                         <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
@@ -220,9 +220,9 @@ export default function Team() {
 
                 {/* Members grid */}
                 <div className="flex-1">
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  <div className="flex flex-wrap justify-center gap-6">
                     {advisoryCommittee.filter(m => !m.name.toLowerCase().includes("reema") && !m.name.toLowerCase().includes("asha")).map((member, index) => (
-                      <motion.div key={`adv-${index}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: index * 0.03 }} className="flex flex-col items-center text-center p-4 bg-muted/5 rounded-xl border border-primary/10">
+                      <motion.div key={`adv-${index}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: index * 0.03 }} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col items-center text-center p-4 bg-muted/5 rounded-xl border border-primary/10">
                         <Avatar className="w-24 h-24">
                           {/* Advisory members may not have individual images; use fallback initials to maintain consistent size */}
                           {(member as any).image ? (
@@ -232,7 +232,7 @@ export default function Team() {
                           )}
                         </Avatar>
                         <div className="mt-3">
-                          <div className="font-semibold">{member.name}</div>
+                          <div className="font-semibold text-lg md:text-xl break-words">{member.name}</div>
                           <div className="text-sm text-muted-foreground uppercase tracking-wide">{member.role}</div>
                         </div>
                       </motion.div>
@@ -268,7 +268,7 @@ export default function Team() {
                             )}
                           </Avatar>
                           <div className="space-y-2">
-                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight">
+                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words text-center">
                               {person.name}
                             </CardTitle>
                             <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
@@ -295,7 +295,7 @@ export default function Team() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-primary">Heads</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
+              <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto px-4">
                 {getOrderedTeams().map((team) => {
                   const heads = team.roles.find(r => r.title === "Head")?.members || [];
                   return heads.map((member, mIndex) => (
@@ -304,7 +304,7 @@ export default function Team() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: mIndex * 0.05 }}
-                      className="h-full"
+                      className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-full"
                     >
                       <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
@@ -315,7 +315,7 @@ export default function Team() {
                             </AvatarFallback>
                           </Avatar>
                           <div className="space-y-2">
-                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap overflow-hidden text-ellipsis px-2">
+                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words px-2 text-center">
                               {member.name}
                             </CardTitle>
                             <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
@@ -340,7 +340,7 @@ export default function Team() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-primary">Leads</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
+              <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto px-4">
                 {getOrderedTeams().map((team) => {
                   const leads = team.roles.find(r => r.title === "Lead")?.members || [];
                   return leads.map((member, mIndex) => (
@@ -349,7 +349,7 @@ export default function Team() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: mIndex * 0.05 }}
-                      className="h-full"
+                      className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-full"
                     >
                       <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
@@ -360,7 +360,7 @@ export default function Team() {
                             </AvatarFallback>
                           </Avatar>
                           <div className="space-y-2">
-                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap overflow-hidden text-ellipsis px-2">
+                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words px-2 text-center">
                               {member.name}
                             </CardTitle>
                             <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
@@ -385,7 +385,7 @@ export default function Team() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-primary">Co-Leads</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
+              <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto px-4">
                 {getOrderedTeams().map((team) => {
                   const coLeads = team.roles.find(r => r.title === "Co-Lead")?.members || [];
                   return coLeads.map((member, mIndex) => (
@@ -394,7 +394,7 @@ export default function Team() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: mIndex * 0.05 }}
-                      className="h-full"
+                      className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-full"
                     >
                       <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 h-full flex flex-col justify-center items-center py-12 px-4 w-full">
                         <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
@@ -405,7 +405,7 @@ export default function Team() {
                             </AvatarFallback>
                           </Avatar>
                           <div className="space-y-2">
-                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight whitespace-nowrap overflow-hidden text-ellipsis px-2">
+                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight break-words px-2 text-center">
                               {member.name}
                             </CardTitle>
                             <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
