@@ -58,7 +58,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "project-expo",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 04:00 PM"
   },
   {
@@ -92,7 +92,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "maze-finder-mouse",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     time: "02:00 PM - 04:00 PM"
   },
   {
@@ -128,7 +128,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "hackathon",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     time: "09:00 AM - 05:00 PM"
   },
   {
@@ -163,7 +163,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "gamethon",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 02:00 PM"
   },
   {
@@ -192,7 +192,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "drone-workshop",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     time: "02:00 PM - 03:00 PM"
   },
   // CULTURAL EVENTS
@@ -220,7 +220,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "solo-dance-indian",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     time: "10:30 AM - 11:20 AM",
     timeLimit: "2 + 1 minutes"
   },
@@ -247,7 +247,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "solo-dance-western",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "2 + 1 minutes"
   },
   {
@@ -273,7 +273,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "spot-choreography",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "90 seconds"
   },
   {
@@ -299,7 +299,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "duet-dance",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "3 + 1 minutes"
   },
   {
@@ -325,7 +325,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "group-dance-indian",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "6 + 2 minutes"
   },
   {
@@ -351,7 +351,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "group-dance-western",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "6 + 2 minutes"
   },
   {
@@ -378,7 +378,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "solo-singing",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 05:00 PM",
     timeLimit: "3 + 1 minutes"
   },
@@ -405,7 +405,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "battle-of-bands",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 05:00 PM"
   },
   {
@@ -430,7 +430,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "fashion-walk",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 05:00 PM"
   },
   {
@@ -456,7 +456,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "drama-competition",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 05:00 PM",
     timeLimit: "8–10 minutes"
   },
@@ -482,7 +482,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "mono-acting",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 05:00 PM",
     timeLimit: "3 + 1 minutes"
   },
@@ -508,7 +508,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "story-telling",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 04:00 PM",
     timeLimit: "6 + 2 minutes"
   },
@@ -534,7 +534,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "short-film-making",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 04:00 PM",
     timeLimit: "Max. 10 minutes"
   },
@@ -561,7 +561,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "reel-contest",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     time: "10:00 AM - 04:00 PM",
     timeLimit: "Max 60 seconds"
   },
@@ -590,7 +590,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "sketching",
-    day: "Day 1",
+    day: "Day 1  - (22-Jan-2026)",
     timeLimit: "50 minutes"
   },
   {
@@ -616,7 +616,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "photography-contest",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     time: "10:00 AM - 02:00 PM"
   },
   {
@@ -645,7 +645,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "script-writing",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "1 hour 45 minutes"
   },
   {
@@ -674,7 +674,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "poster-making",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "90 minutes"
   },
   {
@@ -702,7 +702,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "genspeak-studio",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     timeLimit: "2–3 minutes"
   },
   // COMBO EVENTS
@@ -727,7 +727,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "combo-1",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     isCombo: true,
     includedEvents: ["Solo Dance (Western)", "Spot Choreography"]
   },
@@ -752,7 +752,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "combo-2",
-    day: "Multiple Days",
+    day: "Day 1 & Day 2 - (22-Jan-2026 & 23-Jan-2026)",
     isCombo: true,
     includedEvents: ["Group Dance (Western)", "Battle of Bands", "Fashion Walk"]
   },
@@ -777,7 +777,7 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "combo-3",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     isCombo: true,
     includedEvents: ["Drama Competition", "Mono Acting"]
   },
@@ -791,7 +791,7 @@ export const events: Event[] = [
     location: "VB - 203",
     teamSize: "Varies",
     eligibility: "Open to all",
-    registrationFee: "₹249",
+    registrationFee: "₹349",
     prizes: ["See individual events"],
     guidelines: [
       "Participants must follow the rules and regulations of each individual event included in the combo.",
@@ -802,36 +802,10 @@ export const events: Event[] = [
     requiresPayment: true,
     active: true,
     slug: "combo-4",
-    day: "Day 1",
+    day: "Day 1 - (22-Jan-2026)",
     isCombo: true,
     includedEvents: ["Short Film Making", "Reel Contest"]
   },
-  {
-    id: "combo05",
-    title: "COMBO 5: DANCE MEGA (SOLO + DUET + GROUP)",
-    code: "COMBO05",
-    category: "Cultural",
-    shortDescription: "Solo + Duet + Group dance bundle.",
-    fullDescription: "Register for Solo, Duet and Group dance events together.",
-    location: "Auditorium",
-    teamSize: "Varies",
-    eligibility: "Open to all",
-    registrationFee: "₹1299",
-    prizes: ["See individual events"],
-    guidelines: [
-      "Participants must follow rules of included events",
-      "Judges' decisions final"
-    ],
-    judgingCriteria: [],
-    disqualificationRules: [],
-    requiresPayment: true,
-    active: true,
-    slug: "combo-5",
-    day: "Day 2",
-    isCombo: true,
-    includedEvents: ["Solo Dance (Western)", "Duet Dance", "Group Dance (Indian)" ]
-  },
-
   // WELLNESS EVENTS
   {
     id: "well01",
@@ -851,7 +825,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "wall-of-hope",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -872,7 +846,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fit-and-fine-desk",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -893,7 +867,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fitness-fun-alley",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -914,7 +888,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "zen-zone",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -935,7 +909,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "resource-corner",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -956,7 +930,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "clay-modelling-worry-stones",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -977,16 +951,16 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "make-me-smile-booth",
-    day: "Day 1 & 2",
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well08",
-    title: "RISE OF HOPE (YOGA & HOPE ACTIVITY)",
+    title: "Prerana Formation and Rise of Hope Session",
     code: "WELL08",
     category: "Wellness",
-    shortDescription: "Guided yoga and hope-building session.",
-    fullDescription: "A guided wellness session combining yoga and brief hope activities to start the day positively. Open to all; no evaluation.",
+    shortDescription: "Prerana logo formation.",
+    fullDescription: "Participants will form the Prerana logo through human formation, symbolizing unity, teamwork, and togetherness. This will be followed by the release of helium balloons carrying symbolic messages, representing hope, positivity, and a strong collective spirit. The moment will be visually captured to mark the grand beginning of the fest.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Individual",
     eligibility: "Open to all",
@@ -998,7 +972,28 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "rise-of-hope",
-    day: "Day 2",
+    day: "Day 2 - (23-Jan-2026)",
     time: "07:30 AM – 08:30 AM"
+  },
+  {
+    id: "well09",
+    title: "Therapeutic Art",
+    code: "WELL09",
+    category: "Wellness",
+    shortDescription: "Creative healing activity.",
+    fullDescription: "Therapeutic art is a creative healing activity that uses artistic expression to help individuals release emotions, manage stress, build self-awareness, and support mental and emotional well-being.",
+    location: "Gitam Lawn (opposite Vinay Sadan)",
+    teamSize: "Individual",
+    eligibility: "Open to all",
+    registrationFee: "Free",
+    prizes: [],
+    guidelines: [],
+    judgingCriteria: [],
+    disqualificationRules: [],
+    requiresPayment: false,
+    active: true,
+    slug: "therapeutic-art",
+    day: "Day 2 - (23-Jan-2026)",
+    time: ""
   }
 ];
